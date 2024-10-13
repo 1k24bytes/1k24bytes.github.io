@@ -2,388 +2,295 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tawqeer</title>
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/82/e2/bd/82e2bd51f2828efb39af804af87f2dde.gif">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="btncss.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Tawqeer</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Tawqeer</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    
+    <div class="loader-container" id="loaderContainer">
+      <span>👋</span>
+      <div id="hello-text"></div>
+    </div>
+    <div class="main-conatiner">
+      <header>
+        <div class="heade-r">
+          <div class="logo">TAWQEER</div>
+          <nav>
+            <ul>
+              <li data-section="hero">Home</li>
+              <li data-section="aboutme">About Me</li>
+              <li data-section="project">Projects</li>
+              <li data-section="contact">Contact</li>
+            </ul>
+          </nav>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">TAWQEER</h1>
-        <div class="text-container ani-container">
-          <p class="section__text__p2 section_ani">Frontend Developer</p>
-          <p class="section__text__p2 section_ani">UI/Ux Designer</p>
-          <p class="section__text__p2 section_ani">WordPress Developer</p>
-        </div>
-        <div class="btn-container">
-          <button
-            class="btn-color-1"
-            onclick="location.href='https://mail.google.com/mail/?view=cm&fs=1&to=tawqeerdar21@gmail.com'"
-          >
-            <span>Get In Touch</span>
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/tawqeer/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/1k24bytes'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ year <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.S Data Science & AI<br />B.Tech Electrical Engineering</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hello! I'm Tawqeer, a frontend developer passionate about creating
-              engaging and responsive websites. With a strong background in
-              HTML, CSS, and JavaScript, I love bringing designs to life and
-              ensuring a seamless user experience. I'm always eager to learn new
-              technologies and refine my skills to build better web applications
+      </header>
+
+      <section class="hero">
+        <div class="container">
+          <div class="l1">
+            <p class="welcome">
+              Hi<img
+                src="https://i.pinimg.com/originals/82/e2/bd/82e2bd51f2828efb39af804af87f2dde.gif"
+                alt=""
+                style="width: 24px; height: 24px"
+              />, I am
             </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PHP</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
+            <p class="name">tAWQEER</p>
+            <p class="description">
+              A
+              <span
+                class="dynamic-title"
+                style="color: rgb(231, 147, 37)"
+              ></span>
+              blending my expertise to craft user-centric applications that
+              deliver seamless digital experiences. 🧠
+            </p>
+            <div class="dock">
+              <a href="https://github.com/1k24bytes"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/tawqeer/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/tawqe__er"><i class="fa-brands fa-instagram"></i></a>
+              <a href="tawqeerdar21@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+              <a href="https://azure-faina-77.tiiny.site/"><i class="fa-regular fa-file"></i></a>
             </div>
+            <a href="tawqeerdar21@gmail.com">
+              <div class="live">
+                <p>🟢 Currently available for new opportunities</p>
+              </div>
+            </a>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Additional Skills</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>WordPress</h3>
-                  <p>Advance</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+          <div class="l2 img-right">
+            <div class="card">
+              <div class="glow" />
             </div>
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
+      </section>
+      <section class="aboutme">
+        <div class="section-title"><p>ABOUT ME</p></div>
+        <div class="container" style="padding-top: 2rem">
+          <div class="a1"><img src="img/me6.webp" alt="" class="me" />
+            <a href="https://azure-faina-77.tiiny.site/" class="button">
+              <div class="button__content">
+                <span class="button__text">Download CV</span>
+                <i class="ri-download-cloud-fill button__icon"></i>
+                <div class="button__reflection-1"></div>
+                <div class="button__reflection-2"></div>
+              </div>
+              <img src="img/star.png" alt="" class="button__star-1" />
+              <img src="img/star.png" alt="" class="button__star-2" />
               <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
+                src="img/circle.png"
+                alt=""
+                class="button__circle-1"
               />
-            </div>
-            <h2 class="experience-sub-title project-title">Quakeshock</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/1k24bytes/Quakeshock'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://tawqeer.is-a.dev/Quakeshock/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container my-projects">
               <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
+                src="img/circle.png"
+                alt=""
+                class="button__circle-2"
               />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Personal Portfolio
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/1k24bytes/1k24bytes.github.io'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='http://tawqeer.is-a.dev/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
               <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
+                src="img/diamond.png"
+                alt=""
+                class="button__diamond"
               />
-            </div>
-            <h2 class="experience-sub-title project-title">Snake Game</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/1k24bytes/Snake-game'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href=' http://tawqeer.is-a.dev/Snake-game/' "
-              >
-                Live Demo
-              </button>
+              <img
+                src="img/triangle.png"
+                alt=""
+                class="button__triangle"
+              />
+              <div class="button__shadow"></div>
+            </a></div>
+          
+          <div class="a2">
+            <div class="abt-det">
+              <p class="title_new">tAWQEER</p>
+              <p class="des_new">Developer/Designer based in Kashmir.</p>
+              <p class="abt_new">Education</p>
+              <div class="sctabt">
+                <ul>
+                  <li>
+                    <div class="inst">
+                      <img src="img/iit.png" alt="" class="imglogo" /><span
+                        class="sct_name sml"
+                        >IIT Madras</span
+                      >
+                    </div>
+                    <div class="sct_det">
+                      BS Degree in Data Science and Programming
+                    </div>
+                  </li>
+                  <li>
+                    <div class="inst ">
+                      <img src="img/amu.png" alt="" class="imglogo" /><span
+                        class="sct_name sml"
+                        >Aligarh Muslim University</span
+                      >
+                    </div>
+                    <div class="sct_det">B.Tech in Electrical Engineering</div>
+                  </li>
+                </ul>
+              </div>
+              <hr class="shorthr" />
+              <p class="abt_new" style="padding-top: 20px">Skills</p>
+              <div class="sctabt">
+                <ul>
+                  <li>
+                    <div class="inst">
+                      <span class="sct_name">Frontend</span>
+                    </div>
+                    <div class="sct_det">
+                      <img
+                        src="img/html.png"
+                        alt=""
+                      />
+                      <img
+                        src="img/css.png"
+                        alt=""
+                      />
+                      <img src="img/js.png" alt="" />
+                      <img src="img/tailwindcss.png" alt="" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="inst">
+                      <span class="sct_name">Design</span>
+                    </div>
+                    <div class="sct_det">
+                      <img
+                        src="img/Figma.png"
+                        alt=""
+                      />
+                      <img
+                        src="img/Adobe Photoshop.png"
+                        alt=""
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="inst">
+                      <span class="sct_name">Version Control/Collaboration</span>
+                    </div>
+                    <div class="sct_det">
+                      <img
+                      src="img/Git.png"
+                      alt=""
+                    />
+                    <img
+                        src="img/GitHub.png"
+                        alt=""
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="inst">
+                      <span class="sct_name">Other Tools/Programming:</span>
+                    </div>
+                    <div class="sct_det">
+                      <img
+                        src="img/Python.png"
+                        alt=""
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <hr class="shorthr">
+              <p class="abt_new">Life</p>
+              <div class="sctabt">
+                <ul>
+                  <li>
+                    <div class="inst">
+                      <span
+                        class="sct_name"
+                        >Lastly, when I've got some time off...</span
+                      >
+                    </div>
+                    <div class="sct_det">
+                      I enjoy being in the mountains 🏔️ and hiking 🥾, it's my way of getting fresh air and staying active. When I'm not outdoors, you can find me playing video games 🎮 to relax. I'm also a big fan of Kashmiri pink tea ☕—it’s something I can’t resist. These are a few of the things that keep me happy and energized! 😊
+                    </div>
+                  </li>
             </div>
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      </section>
+      <section class="project">
+        <div class="section-title"><p>Project</p></div>
+        <div class="project-item ping">
+          <div class="p1">
+            <h2>Quakeshock</h2>
+            <p>
+              QuakeShock is a comprehensive earthquake website that provides real-time information and updates about seismic activity around the world. The website is built on the USGS (United States Geological Survey) API, which enables the collection and analysis of seismic data from various sources.
+            </p>
+            <div class="dock">
+              <button class="knowmore"><a href="https://github.com/1k24bytes/Quakeshock">Know More</a></button>
+            </div>
+          </div>
+          <div class="p2">
+            <img src="img/pro1.png" alt="Project 1" />
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="p1">
+            <h2>Snake-game</h2>
+            <p>
+              A classic Snake Game built using vanilla HTML, CSS, and JavaScript, featuring smooth gameplay and retro-style sound effects. Enjoy responsive controls and increasing difficulty as the snake grows with each point!
+            </p>
+            <div class="dock">
+              <button class="knowmore"><a href="https://github.com/1k24bytes/Snake-game">Know More</a></button>
+            </div>
+          </div>
+          <div class="p2">
+            <img src="img/pro2.png" alt="Project 2" />
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="p1">
+            <h2>Snow Type</h2>
+            <p>
+              A lightweight typing test tool built with JavaScript to measure typing speed and accuracy in real-time. Features include WPM tracking, instant accuracy feedback, and a user-friendly interface for a seamless experience.
+            </p>
+            <div class="dock">
+              <button class="knowmore"><a href="https://github.com/1k24bytes/snow-type">Know More</a></button>
+            </div>
+          </div>
+          <div class="p2 ">
+            <img src="img/pro3.png" alt="Project 3" class="rt"/>
+          </div>
+        </div>
+      </section>
+      
+      <section class="contact">
+        
+        <div class="image-container"></div>
+        <div class="contentt">
+          <p class="contact_msg">Let's collaborate!</p>
+          <p class="contact-des">If you have a project or job opportunity in mind, feel free to reach out. 
+            You can connect with me on LinkedIn or email me at <a href="tawqeerdar21@gmail.com">tawqeerdar21@gmail.com</a></p>
+            
+            <div class="social-icons">
+
+              <a href="https://github.com/1k24bytes"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/tawqeer/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/tawqe__er"><i class="fa-brands fa-instagram"></i></a>
+              <a href="tawqeerdar21@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+              <a href="https://azure-faina-77.tiiny.site/"><i class="fa-regular fa-file"></i></a>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:examplemail@gmail.com">tawqeerdar21@gmail.com</a>
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/tawqeer/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 TAWQEER. All Rights Reserved.</p>
-    </footer>
+      <footer> <div class="footer-logo">TAWQEER</div></footer>
+    </div>
     <script src="script.js"></script>
-    <script>
-      const texts = document.querySelectorAll(".section__text__p2");
-      let currentIndex = 0;
-
-      function showText(index) {
-        texts[index].classList.add("active");
-      }
-
-      function hideText(index) {
-        texts[index].classList.remove("active");
-        texts[index].classList.add("slide-up");
-        setTimeout(() => {
-          texts[index].classList.remove("slide-up");
-        }, 500);
-      }
-
-      function cycleTexts() {
-        hideText(currentIndex);
-        currentIndex = (currentIndex + 1) % texts.length;
-        showText(currentIndex);
-      }
-
-      showText(currentIndex);
-      setInterval(cycleTexts, 2500);
-    </script>
   </body>
 </html>
