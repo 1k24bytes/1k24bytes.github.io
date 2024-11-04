@@ -584,3 +584,47 @@ footer {
   font-family: "Bimbo", sans-serif;
   font-size: 4.3em;
 }
+
+
+
+/* pulse */
+
+.pulse-indicator {
+  position: relative;
+  display: flex;
+  height: 12px;
+  width: 12px;
+}
+
+.pulse-indicator__outer {
+  position: absolute;
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #34d399;
+  opacity: 0.75;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.pulse-indicator__inner {
+  position: relative;
+  display: inline-flex;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  background-color: #10b981;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
