@@ -1,0 +1,117 @@
+@media screen and (max-width: 475px) {
+  .main-conatiner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .loader-container span {
+    font-size: 28px;
+  }
+
+  #hello-text {
+    font-size: 28px;
+  }
+  .heade-r {
+    max-width: 95%;
+    width: 95%;
+  }
+  header nav ul {
+    gap: 0.5em;
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+    padding-right: 20px;
+  }
+
+  .hero {
+    justify-content: flex-start;
+    min-height: 130vh;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    padding: 20px 20px 20px 20px;
+  }
+  .l1 {
+    width: 100%;
+  }
+  .l2 {
+    width: 100%;
+  }
+  .name {
+    font-size: 2.2em;
+  }
+  .dock {
+    padding-top: 40px;
+  }
+  .live {
+    width: 95%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .live p {
+    font-size: 12px;
+  }
+
+  .aboutme {
+    gap: 30px;
+    min-height: 270vh;
+  }
+  .a1 {
+    width: 100%;
+  }
+  .a2 {
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .me {
+    width: 320px;
+    height: 420px;
+  }
+  .sct_name,
+  .sct_det {
+    text-align: left;
+  }
+  .sml {
+    font-size: 14px;
+  }
+  .project {
+    min-height: 70vh;
+  }
+  .ping {
+    height: 390px !important;
+  }
+  .project-item {
+    height: 300px;
+  }
+  .p1 {
+    padding: 0;
+  }
+  .p1 h2 {
+    font-size: 18px;
+  }
+  .p1 p {
+    font-size: 12px;
+  }
+  .p2 img {
+    width: 200px;
+    height: 200px;
+  }
+  .rt {
+    padding-left: 30px;
+  }
+  .contact_msg {
+    font-size: 1.6rem;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-des {
+    width: 100%;
+  }
+}
